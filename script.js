@@ -38,6 +38,10 @@ let shoes = ["https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSVcu0wCAIh
 ];
 
 //on start
+hImg.innerHTML = `<img src=${hats[hPos]}/>`;
+tImg.innerHTML = `<img src=${tops[tPos]}/>`;
+bImg.innerHTML = `<img src=${bottoms[bPos]}/>`;
+sImg.innerHTML = `<img src=${shoes[sPos]}/>`;
 
 //hat buttons
 hlBtn.addEventListener("click", () => {
