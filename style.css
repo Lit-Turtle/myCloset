@@ -1,3 +1,7 @@
+* {
+    display: absolute;
+}
+
 button {
     background-color: white;
     color: black;
@@ -5,11 +9,13 @@ button {
     padding: 4px;
     font-style: bold;
 }
-
 button:hover {
     background-color: #f0f0f0;
 }
-
 button:active {
     background-color: #a1a1a1;
+}
+
+img {
+    width: 300px;
 }
