@@ -1,4 +1,6 @@
-
+* {
+  font-family: sans-serif;  
+}
 button {
     background-color: white;
     color: black;
@@ -57,4 +59,19 @@ h1 {
 .shoe-img {
   /*height: 15vh;*/
   object-fit: cover; 
+}
+
+/*Add Cloth*/
+h4{
+  text-align: center;
+  margin-top: 0;
+}
+#addCloth {
+  border: 4px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #b5d1ff;
+}
+#addInput {
+  border: 2px solid black;
 }

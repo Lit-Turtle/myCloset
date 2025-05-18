@@ -157,17 +157,22 @@ const addInput = document.getElementById("addInput");
 const addSubmit = document.getElementById("addSubmit");
 
 addSubmit.addEventListener("click", () => {
-    if(cateSelect.value == "hat") {
-        hats.push(addInput.value);
-    } else if (cateSelect.value == "top") {
-        tops.push(addInput.value);
-    } else if(cateSelect.value == "bottom") {
-        bottoms.push(addInput.value);
-    } else if(cateSelect.value == "shoe") {
-        shoes.push(addInput.value);
-    } else {
-        alert("Please select a category");
-    }
+    if(addInput.value != ""){
+        if(cateSelect.value == "hat") {
+            hats.push(addInput.value);
+        } else if (cateSelect.value == "top") {
+            tops.push(addInput.value);
+        } else if(cateSelect.value == "bottom") {
+            bottoms.push(addInput.value);
+        } else if(cateSelect.value == "shoe") {
+            shoes.push(addInput.value);
+        } else {
+            alert("Please select a category");
+        }
 
-    addInput.value = "";
+        addInput.value = "";
+    } else {
+        alert("Please enter image address");
+    }
+    
 });
