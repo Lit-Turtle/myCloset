@@ -1,5 +1,4 @@
 * {
-    display: absolute;
 }
 
 button {
@@ -17,5 +16,24 @@ button:active {
 }
 
 img {
-    width: 300px;
+  width: 300px;
+}
+
+.cate-box {
+  display: flex;
+  align-items: center;      
+  gap: 10px;                
+  margin-bottom: 16px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;       
+  align-items: center;          
+  justify-content: center;      
+  height: 100vh;  
+}
+
+h1 {
+  text-align: center;
 }
