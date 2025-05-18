@@ -49,7 +49,7 @@ const bImg = document.getElementById("b-img");
 const brBtn = document.getElementById("br-btn");
 let bPos = 0;
 let bottoms = ["https://di2ponv0v5otw.cloudfront.net/posts/2023/03/05/6404d044dbb0e78e3f15dcf0/m_wp_6404d06ac1c346aceb4edd1d.webp"/*kaki tiger*/,
-    "https://image.hm.com/assets/hm/c9/f5/c9f59cabee8ae45afa27dc54f5376c8925d8a2ab.jpg?imwidth=1536"/*trust the process*/
+    "https://image.hm.com/assets/hm/c9/f5/c9f59cabee8ae45afa27dc54f5376c8925d8a2ab.jpg"/*trust the process*/
 ];
 //shoes items
 const slBtn = document.getElementById("sl-btn");
