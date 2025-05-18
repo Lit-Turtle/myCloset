@@ -4,7 +4,8 @@ const hImg = document.getElementById("h-img");
 const hrBtn = document.getElementById("hr-btn");
 let hPos = 0;
 let hats = ["https://d3nt9em9l1urz8.cloudfront.net/media/catalog/product/cache/3/image/9df78eab33525d08d6e5fb8d27136e95/b/b/bb8018800tan-1.jpg"/*bbc orange*/, 
-    "https://cdn.shopify.com/s/files/1/0052/8342/t/2/assets/P9260011-Edit.jpg?v=1653462873"/*Zippy 50*/
+    "https://cdn.shopify.com/s/files/1/0052/8342/t/2/assets/P9260011-Edit.jpg?v=1653462873"/*Zippy 50*/,
+    "https://wallpapers.com/images/featured/blank-white-background-xbsfzsltjksfompa.jpg"/*white/no hat*/
 ];
 //top items
 const tlBtn = document.getElementById("tl-btn");
@@ -65,28 +66,28 @@ let shoes = ["https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSVcu0wCAIh
 ];
 
 //on start
-hImg.innerHTML = `<img src=${hats[hPos]}/>`;
-tImg.innerHTML = `<img src=${tops[tPos]}/>`;
-bImg.innerHTML = `<img src=${bottoms[bPos]}/>`;
-sImg.innerHTML = `<img src=${shoes[sPos]}/>`;
+hImg.innerHTML = `<img src=${hats[hPos]} class="hat-img"/>`;
+tImg.innerHTML = `<img src=${tops[tPos]} class="top-img"/>`;
+bImg.innerHTML = `<img src=${bottoms[bPos]} class="bottom-img"/>`;
+sImg.innerHTML = `<img src=${shoes[sPos]} class="shoe-img"/>`;
 
 //hat buttons
 hlBtn.addEventListener("click", () => {
     if(hPos != 0 ) {
         hPos-= 1;
-        hImg.innerHTML = `<img src=${hats[hPos]} />`;
+        hImg.innerHTML = `<img src=${hats[hPos]} class="hat-img" />`;
     } else {
         hPos = hats.length - 1;
-        hImg.innerHTML = `<img src=${hats[hPos]} />`;
+        hImg.innerHTML = `<img src=${hats[hPos]} class="hat-img"/>`;
     }
 });
 hrBtn.addEventListener("click", () => {
     if(hPos != hats.length - 1) {
         hPos+= 1;
-        hImg.innerHTML = `<img src=${hats[hPos]} />`;
+        hImg.innerHTML = `<img src=${hats[hPos]} class="top-img"/>`;
     } else {
         hPos = 0;
-        hImg.innerHTML = `<img src=${hats[hPos]} />`;
+        hImg.innerHTML = `<img src=${hats[hPos]} class="top-img"/>`;
     }
 });
 
@@ -94,19 +95,19 @@ hrBtn.addEventListener("click", () => {
 tlBtn.addEventListener("click", () => {
     if(tPos != 0 ) {
         tPos-= 1;
-        tImg.innerHTML = `<img src=${tops[tPos]} />`;
+        tImg.innerHTML = `<img src=${tops[tPos]} class="bottom-img"/>`;
     } else {
         tPos = tops.length - 1;
-        tImg.innerHTML = `<img src=${tops[tPos]} />`;
+        tImg.innerHTML = `<img src=${tops[tPos]} class="bottom-img"/>`;
     }
 });
 trBtn.addEventListener("click", () => {
     if(tPos != tops.length - 1) {
         tPos+= 1;
-        tImg.innerHTML = `<img src=${tops[tPos]} />`;
+        tImg.innerHTML = `<img src=${tops[tPos]} class="shoe-img"/>`;
     } else {
         tPos = 0;
-        tImg.innerHTML = `<img src=${tops[tPos]} />`;
+        tImg.innerHTML = `<img src=${tops[tPos]} class="shoe-img"/>`;
     }
 });
 
