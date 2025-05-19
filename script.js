@@ -42,7 +42,9 @@ let tops = ["https://image.hm.com/assets/hm/82/70/827052378745fd6c04c1b2fed9580a
     "https://i.ebayimg.com/images/g/N8cAAOSwbDNkTr12/s-l1200.jpg"/*jordan x undefeated black hoodie*/,
     "https://i.ebayimg.com/images/g/XYIAAOSwm-tmsY8e/s-l400.jpg"/*gtr white camo hoodie*/,
     "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/094/515/003/original/1308642_01.jpg.jpeg?action=crop&width=800"/*assc undefeated hoodie*/,
-    "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/064/330/818/original/859511_01.jpg.jpeg?action=crop&width=800"/*assc worldwide hoodie*/
+    "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/064/330/818/original/859511_01.jpg.jpeg?action=crop&width=800"/*assc worldwide hoodie*/,
+    "https://images.squarespace-cdn.com/content/v1/6010430e723baf1b6601dbda/1613443961121-KABBTMQW6GMMOYELT19M/image0.jpeg"/*community over cars black hoodie*/,
+
 ];
 //bottom items
 const blBtn = document.getElementById("bl-btn");
@@ -50,7 +52,13 @@ const bImg = document.getElementById("b-img");
 const brBtn = document.getElementById("br-btn");
 let bPos = 0;
 let bottoms = ["https://di2ponv0v5otw.cloudfront.net/posts/2023/03/05/6404d044dbb0e78e3f15dcf0/m_wp_6404d06ac1c346aceb4edd1d.webp"/*kaki tiger*/,
-    "https://image.hm.com/assets/hm/c9/f5/c9f59cabee8ae45afa27dc54f5376c8925d8a2ab.jpg"/*trust the process*/
+    "https://image.hm.com/assets/hm/c9/f5/c9f59cabee8ae45afa27dc54f5376c8925d8a2ab.jpg"/*trust the process*/,
+    "https://www.brooklyncloth.com/cdn/shop/files/BFM9867F_SND-1.jpg?v=1745436593&width=800"/*kaki sweats*/,
+    "https://www.worknwear.ca/cdn/shop/files/c1bd25fa-9585-5745-8e46-1a476a978653_1800x1800_649ccdf5-6826-4c51-89a9-bd963d723439_grande.webp?v=1693235304"/*white logo sweats*/,
+    "https://i5.walmartimages.com/asr/314ea9d2-f384-4f0b-9491-03c9ce3e9720.8321e8a13d9eb6bfc7022a64f21ecde6.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF"/*older black sweats*/,
+    "https://shopcgx.com/cdn/shop/files/EQYFB03249_-_black.png?v=1708279691"/*newer black sweats*/,
+    "https://bfasset.costco-static.com/U447IH35/as/p4nxfkrt9wq3j4bpr8t8mr/100572615-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350"/*black/grey sweats*/,
+    "https://i.ebayimg.com/images/g/zekAAOSwBUdloNil/s-l1600.webp"/*black baggy pants*/
 ];
 //shoes items
 const slBtn = document.getElementById("sl-btn");
@@ -117,7 +125,7 @@ blBtn.addEventListener("click", () => {
         bPos-= 1;
         bImg.innerHTML = `<img src=${bottoms[bPos]} />`;
     } else {
-        bPos = tops.length - 1;
+        bPos = bottoms.length - 1;
         bImg.innerHTML = `<img src=${bottoms[bPos]} />`;
     }
 });
