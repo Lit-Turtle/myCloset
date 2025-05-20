@@ -184,3 +184,20 @@ addSubmit.addEventListener("click", () => {
     }
     
 });
+
+//Save Fits
+const saveBtn = document.getElementById("save-btn");
+const saveBox = document.getElementById("save-box");
+
+saveBtn.addEventListener("click", ()=>{
+    saveBox.innerHTML += `<div id="savedSets">
+        <div id="top-img">
+            <img src="${tops[tPos]}" id="saveLeft" />
+            <img src="${hats[hPos]}" id="saveRight" />
+        </div>
+        <div id="bottom-img">
+            <img src="${bottoms[bPos]}" id="saveLeft" />
+            <img src="${shoes[sPos]}" id="savedRight" />
+        </div>
+    </div>`;
+})
