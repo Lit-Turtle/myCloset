@@ -200,4 +200,4 @@ saveBtn.addEventListener("click", ()=>{
             <img src="${shoes[sPos]}" id="savedRight" />
         </div>
     </div>`;
-})
+});
