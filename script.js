@@ -5,7 +5,15 @@ const hrBtn = document.getElementById("hr-btn");
 let hPos = 0;
 let hats = ["https://d3nt9em9l1urz8.cloudfront.net/media/catalog/product/cache/3/image/9df78eab33525d08d6e5fb8d27136e95/b/b/bb8018800tan-1.jpg"/*bbc orange*/, 
     "https://cdn.shopify.com/s/files/1/0052/8342/t/2/assets/P9260011-Edit.jpg?v=1653462873"/*Zippy 50*/,
-    "https://wallpapers.com/images/featured/blank-white-background-xbsfzsltjksfompa.jpg"/*white/no hat*/
+    "https://wallpapers.com/images/featured/blank-white-background-xbsfzsltjksfompa.jpg"/*white/no hat*/,
+    "https://raw.githubusercontent.com/Lit-Turtle/closetimg/main/Apex%20Grey.png"/*grey Apex*/,
+    "https://raw.githubusercontent.com/Lit-Turtle/closetimg/main/Blue%20Greddy.png"/*blue greddy*/,
+    "https://raw.githubusercontent.com/Lit-Turtle/closetimg/main/Supreme%20Green.png"/*Supreme Green*/,
+    "https://raw.githubusercontent.com/Lit-Turtle/closetimg/main/Surf%20Hi.png"/*surf hi*/,
+    "https://raw.githubusercontent.com/Lit-Turtle/closetimg/main/Thrasher%20Beanie.png"/*skate to destroy beanie*/,
+    "https://raw.githubusercontent.com/Lit-Turtle/closetimg/main/White%20Greddy.png"/*white greddy*/,
+    "https://raw.githubusercontent.com/Lit-Turtle/closetimg/main/hi%20Green.png"/*hi green*/,
+    "https://raw.githubusercontent.com/Lit-Turtle/closetimg/main/im%20local%20black.png"/*im local hat*/
 ];
 //top items
 const tlBtn = document.getElementById("tl-btn");
@@ -44,7 +52,11 @@ let tops = ["https://image.hm.com/assets/hm/82/70/827052378745fd6c04c1b2fed9580a
     "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/094/515/003/original/1308642_01.jpg.jpeg?action=crop&width=800"/*assc undefeated hoodie*/,
     "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/064/330/818/original/859511_01.jpg.jpeg?action=crop&width=800"/*assc worldwide hoodie*/,
     "https://images.squarespace-cdn.com/content/v1/6010430e723baf1b6601dbda/1613443961121-KABBTMQW6GMMOYELT19M/image0.jpeg"/*community over cars black hoodie*/,
-
+    "https://raw.githubusercontent.com/Lit-Turtle/closetimg/main/Free%20Planet%20Shirt.png"/*free planet tee*/,
+    "https://raw.githubusercontent.com/Lit-Turtle/closetimg/main/Human%20Made%20Dark%20Blue.png"/*human made dark blue*/,
+    "https://raw.githubusercontent.com/Lit-Turtle/closetimg/main/Imperical%20Black.png"/*imperical black*/,
+    "https://raw.githubusercontent.com/Lit-Turtle/closetimg/main/Koi%20Button%20Shirt.png"/*koi button*/,
+    "https://raw.githubusercontent.com/Lit-Turtle/closetimg/main/Never%20Content%20White.png"/*never content white*/
 ];
 //bottom items
 const blBtn = document.getElementById("bl-btn");
@@ -58,7 +70,10 @@ let bottoms = ["https://di2ponv0v5otw.cloudfront.net/posts/2023/03/05/6404d044db
     "https://i5.walmartimages.com/asr/314ea9d2-f384-4f0b-9491-03c9ce3e9720.8321e8a13d9eb6bfc7022a64f21ecde6.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF"/*older black sweats*/,
     "https://shopcgx.com/cdn/shop/files/EQYFB03249_-_black.png?v=1708279691"/*newer black sweats*/,
     "https://bfasset.costco-static.com/U447IH35/as/p4nxfkrt9wq3j4bpr8t8mr/100572615-847__1?auto=webp&format=jpg&width=350&height=350&fit=bounds&canvas=350,350"/*black/grey sweats*/,
-    "https://i.ebayimg.com/images/g/zekAAOSwBUdloNil/s-l1600.webp"/*black baggy pants*/
+    "https://i.ebayimg.com/images/g/zekAAOSwBUdloNil/s-l1600.webp"/*black baggy pants*/,
+    "https://i5.walmartimages.com/asr/f5b6a855-10b9-4b80-bade-02eaea2ab154.af04ddd19fc717f9838e1d19cde7cded.jpeg"/*grey short with stripe*/,
+    "https://legendbrand.com/cdn/shop/products/1134-01_1800x1800.jpg"/*black short*/,
+    "https://raw.githubusercontent.com/Lit-Turtle/closetimg/main/No%20Logo%20Sweats.png"/*white no logo sweats*/
 ];
 //shoes items
 const slBtn = document.getElementById("sl-btn");
