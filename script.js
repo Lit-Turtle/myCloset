@@ -73,7 +73,9 @@ let bottoms = ["https://di2ponv0v5otw.cloudfront.net/posts/2023/03/05/6404d044db
     "https://i.ebayimg.com/images/g/zekAAOSwBUdloNil/s-l1600.webp"/*black baggy pants*/,
     "https://i5.walmartimages.com/asr/f5b6a855-10b9-4b80-bade-02eaea2ab154.af04ddd19fc717f9838e1d19cde7cded.jpeg"/*grey short with stripe*/,
     "https://legendbrand.com/cdn/shop/products/1134-01_1800x1800.jpg"/*black short*/,
-    "https://raw.githubusercontent.com/Lit-Turtle/closetimg/main/No%20Logo%20Sweats.png"/*white no logo sweats*/
+    "https://raw.githubusercontent.com/Lit-Turtle/closetimg/main/No%20Logo%20Sweats.png"/*white no logo sweats*/,
+    "https://raw.githubusercontent.com/Lit-Turtle/closetimg/main/mauishorts.png"/*maui and sons shorts*/,
+    "https://raw.githubusercontent.com/Lit-Turtle/closetimg/main/mauiswimtrunks.png"/*maui and sons swim shorts*/
 ];
 //shoes items
 const slBtn = document.getElementById("sl-btn");
