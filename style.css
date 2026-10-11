@@ -1,105 +1,313 @@
+:root {
+    --hat-height: clamp(125px, 16.25vh, 175px);
+    --top-height: clamp(250px, 31.25vh, 375px);
+    --bottom-height: clamp(200px, 27.5vh, 300px);
+    --shoe-height: clamp(125px, 16.25vh, 175px);
+}
+
 * {
-  font-family: sans-serif;  
+    font-family: sans-serif;
 }
+
+#bgColor {
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+}
+
 button {
-    background-color: white;
-    color: black;
-    border: 2px solid black;
     padding: 4px;
-    font-style: bold;
+    color: black;
+    background: white;
+    border: 2px solid black;
     border-radius: 5px;
+    font-weight: bold;
 }
+
 button:hover {
-    background-color: #f0f0f0;
+    background: #f0f0f0;
 }
+
 button:active {
-    background-color: #a1a1a1;
+    background: #a1a1a1;
 }
 
 img {
-  width: 300px;
-}
-
-.cate-box {
-  display: flex;
-  align-items: center;      
-  gap: 10px;                
-  margin-bottom: 16px;
+    display: block;
+    object-fit: contain;
 }
 
 .container {
-  display: flex;
-  flex-direction: column;       
-  align-items: center;          
-  justify-content: center;      
-  margin-bottom: 10vh;
+    display: block;
+    margin: 0;
 }
 
 h1 {
-  text-align: center;
-  margin-top: 10vh;
-  margin-bottom: 0px;
+    position: fixed;
+    top: 2vh;
+    left: 50%;
+    z-index: 2;
+    margin: 0;
+    transform: translateX(-50%);
+    text-align: center;
 }
 
-.hat-img {
-  /*height: 15vh;*/
-  object-fit: cover; 
+.cate-box {
+    position: fixed;
+    left: 50%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: max-content;
+    margin: 0;
+    transform: translateX(-50%);
 }
 
-.top-img {
-  /*height: 30vh;*/
-  object-fit: cover; 
+.cate-box > button {
+    align-self: center;
+    flex: 0 0 auto;
 }
 
-.bottom-img {
-  /*height: 20vh;*/
-  object-fit: cover; 
+#hat-box { top: 3.5vh; }
+#top-box { top: calc(3.5vh + var(--hat-height)); }
+#bottom-box { top: calc(3.5vh + var(--hat-height) + var(--top-height)); }
+#shoe-box {
+    top: calc(3.5vh + var(--hat-height) + var(--top-height) + var(--bottom-height));
 }
 
-.shoe-img {
-  /*height: 15vh;*/
-  object-fit: cover; 
+#h-img {
+    display: flex;
+    align-items: center;
+    gap: 0;
 }
 
-/*Add Cloth*/
-h4{
-  text-align: center;
-  margin-top: 0;
+#h-img #left-hat,
+#h-img #right-hat {
+    width: clamp(10vh, 7vw, 95px);
+    height: calc(var(--hat-height) * 0.6);
+    box-sizing: border-box;
+    object-fit: fill;
+    opacity: 0.25;
 }
+
+#h-img #left-hat {
+    margin-right: -4.5vw;
+    mask-image: linear-gradient(to right, transparent, black);
+    -webkit-mask-image: linear-gradient(to right, transparent, black);
+}
+
+#h-img #right-hat {
+    margin-left: -4.5vw;
+    mask-image: linear-gradient(to left, transparent, black);
+    -webkit-mask-image: linear-gradient(to left, transparent, black);
+}
+
+#h-img #center-hat {
+    flex: 0 0 auto;
+    width: min(50vw, 225px);
+    height: var(--hat-height);
+}
+
+#t-img,
+#b-img,
+#s-img {
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+
+#t-img #left-top,
+#t-img #right-top,
+#b-img #left-bottom,
+#b-img #right-bottom,
+#s-img #left-shoe,
+#s-img #right-shoe {
+    flex: 0 0 auto;
+    box-sizing: border-box;
+    object-fit: fill;
+    opacity: 0.25;
+}
+
+#t-img #left-top,
+#t-img #right-top {
+    width: clamp(50px, 2vw, 100px);
+    height: calc(var(--top-height) * 0.6);
+}
+
+#b-img #left-bottom,
+#b-img #right-bottom {
+    width: clamp(45px, 2vw, 90px);
+    height: calc(var(--bottom-height) * 0.6);
+}
+
+#s-img #left-shoe,
+#s-img #right-shoe {
+    width: clamp(40px, 3vw, 75px);
+    height: calc(var(--shoe-height) * 0.6);
+}
+
+#t-img #left-top,
+#b-img #left-bottom,
+#s-img #left-shoe {
+    margin-right: -4.5vw;
+    mask-image: linear-gradient(to right, transparent, black);
+    -webkit-mask-image: linear-gradient(to right, transparent, black);
+}
+
+#t-img #right-top,
+#b-img #right-bottom,
+#s-img #right-shoe {
+    margin-left: -4.5vw;
+    mask-image: linear-gradient(to left, transparent, black);
+    -webkit-mask-image: linear-gradient(to left, transparent, black);
+}
+
+#t-img img {
+    width: min(85vw, 325px);
+    height: var(--top-height);
+}
+
+#b-img img {
+    width: min(75vw, 287.5px);
+    height: var(--bottom-height);
+}
+
+#s-img img {
+    width: min(60vw, 237.5px);
+    height: var(--shoe-height);
+}
+
+h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
 #addCloth {
-  border: 4px solid black;
-  border-radius: 5px;
-  padding: 5px;
-  background-color: #dbdbdb;
+    padding: 5px;
+    background: #dbdbdb;
+    border: 1px solid black;
+    border-radius: 5px;
 }
+
 #addInput {
-  border: 2px solid black;
+    border: 2px solid black;
 }
-/*Save Box*/
+
+#addSelect {
+    margin-left: 33%;
+}
+
+#side-panel {
+    position: fixed;
+    top: 50%;
+    right: clamp(32px, 6vw, 90px);
+    z-index: 3;
+    width: 280px;
+    max-height: 85vh;
+    overflow-y: auto;
+    transform: translateY(-50%);
+}
+
 #save-btn {
-  margin-bottom: 5px;
-  background-color: #dbdbdb;
+    display: block;
+    margin: 0 auto 10px;
+    background: #dbdbdb;
 }
-#save-btn:hover {
-  background-color: #cccccc;
-}
-#save-btn:active {
-  background-color: #ababab;
+
+#save-btn:hover { background: #ccc; }
+#save-btn:active { background: #ababab; }
+
+#save-box {
+    margin-top: 5vh;
+    max-height: 45vh;
+    overflow-y: auto;
 }
 
 #savedSets {
-  border: 4px solid black;
-  border-radius: 5px;
-  padding: 5px;
-  margin-top: 10px;
+    margin-top: 10px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
 }
 
-#saveLeft {
-  width: 200px;
-  height: 200px;
+#saveLeft, #saveRight {
+    width: 12vw;
+    height: 12vh;
 }
 
-#saveRight {
-  width: 300px;
-  height: 200px;
+.saved-set {
+    margin-top: 10px;
+    padding: 5px;
+    border: 4px solid black;
+    border-radius: 5px;
+}
+
+.saved-row {
+    display: flex;
+    justify-content: center;
+}
+
+.saved-row img {
+    width: 7vw;
+    height: 7vh;
+    object-fit: contain;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+}
+
+@media (max-width: 700px) {
+    :root {
+        --hat-height: clamp(81px, 11.25vh, 125px);
+        --top-height: clamp(163px, 26.25vh, 275px);
+        --bottom-height: clamp(138px, 21.25vh, 225px);
+        --shoe-height: clamp(81px, 11.25vh, 125px);
+    }
+
+    .cate-box {
+        gap: 6px;
+    }
+
+    #hat-box { top: 4.5vh; }
+    #top-box { top: calc(4.5vh + var(--hat-height)); }
+    #bottom-box { top: calc(4.5vh + var(--hat-height) + var(--top-height)); }
+    #shoe-box {
+        top: calc(4.5vh + var(--hat-height) + var(--top-height) + var(--bottom-height));
+    }
+
+    #h-img img { width: 35vw; }
+    #t-img img { width: 47.5vw; }
+    #b-img img { width: 42.5vw; }
+    #s-img img { width: 37.5vw; }
+
+    #side-panel {
+        top: auto;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        box-sizing: border-box;
+        width: 100%;
+        max-height: 27vh;
+        padding: 8px;
+        background: white;
+        border-top: 2px solid black;
+        transform: none;
+    }
+
+    #addCloth {
+        padding: 4px;
+    }
+
+    #addCloth h4 {
+        margin-bottom: 4px;
+    }
+
+    #save-box {
+        max-height: 10vh;
+    }
 }
