@@ -1,55 +1,72 @@
 <!DOCTYPE html>
 <html lang ="en">
     <head>
-        <title>My Closet Maker</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale = 1.0">
         <link rel="stylesheet" href="style.css">
+        <title>My Wardrobe</title>
     </head>
     <body>
+        <input type="color" id="bgColor" value="#ffffff">
         <div class="container">
-            <h1>My Closet Maker</h1>
             <!--hat-->
             <div id="hat-box" class="cate-box">
-                <button id="hl-btn"><</button>
-                <div id="h-img"></div>
-                <button id="hr-btn">></button>
+                <button id="hl-btn">&#11013;</button>
+                <div id="h-img">
+                    <img id="left-hat" />
+                    <img id="center-hat" class="hat-img" />
+                    <img id="right-hat" />
+                </div>
+                <button id="hr-btn">&#10145;</button>
             </div>
             <!--tops-->
             <div id="top-box" class="cate-box">
-                <button id="tl-btn"><</button>
-                <div id="t-img"></div>
-                <button id="tr-btn">></button>
+                <button id="tl-btn">&#11013;</button>
+                <div id="t-img">
+                    <img id="left-top" />
+                    <img id="center-top" class="top-img" />
+                    <img id="right-top" />
+                </div>
+                <button id="tr-btn">&#10145;</button>
             </div>
             <!--bottoms-->
             <div id="bottom-box" class="cate-box">
-                <button id="bl-btn"><</button>
-                <div id="b-img"></div>
-                <button id="br-btn">></button>
+                <button id="bl-btn">&#11013;</button>
+                <div id="b-img">
+                    <img id="left-bottom" />
+                    <img id="center-bottom" class="bottom-img" />
+                    <img id="right-bottom" />
+                </div>
+                <button id="br-btn">&#10145;</button>
             </div>
             <!--shoes-->
             <div id="shoe-box" class="cate-box">
-                <button id="sl-btn"><</button>
-                <div id="s-img"></div>
-                <button id="sr-btn">></button>
+                <button id="sl-btn">&#11013;</button>
+                <div id="s-img">
+                    <img id="left-shoe" />
+                    <img id="center-shoe" class="shoe-img" />
+                    <img id="right-shoe" />
+                </div>
+                <button id="sr-btn">&#10145;</button>
             </div>
-            <button id="save-btn">Save Fit</button><!--Save Fit Button-->
-            <!--Add Item-->
-            <div id="addCloth">
-                <h4>Add Cloth</h4>
-                <select id="addSelect">
-                    <option value="invalid">Select One</option>
-                    <option value="hat">Hat</option>
-                    <option value="top">Top</option>
-                    <option value="bottom">Bottom</option>
-                    <option value="shoe">Shoe</option>
-                </select>
-                <input placeholder="Enter image address" id="addInput" required/>
-                <button id="addSubmit">Submit</button>
-            </div>
+            
+            <div id="side-panel">
+                <button id="save-btn">Save Fit</button>
 
-            <!--Results/Saved-->
-            <div id="save-box"></div>
+                <div id="addCloth">
+                    <h4>Add Cloth</h4>
+                    <select id="addSelect">
+                        <option value="invalid">Select One</option>
+                        <option value="hat">Hat</option>
+                        <option value="top">Top</option>
+                        <option value="bottom">Bottom</option>
+                        <option value="shoe">Shoe</option>
+                    </select>
+                    <input placeholder="Enter image address" id="addInput" required />
+                    <button id="addSubmit">Submit</button>
+                </div>
+
+                <div id="save-box"></div>
         </div>
     </body>
     <script src="script.js"></script>
