@@ -9,14 +9,13 @@ let hPos = 0;
 let hats = [
     "https://github.com/Lit-Turtle/myCloset/blob/main/images/hat/EmptyHat.webp?raw=true",
     "https://github.com/Lit-Turtle/myCloset/blob/main/images/hat/BillionaireOrangeHat.webp?raw=true",
-    "https://github.com/Lit-Turtle/myCloset/blob/main/images/hat/BlackSwissBeanie.webp?raw=true",
+    "./images/hat/BlackSwissBeanie.webp",
     "https://github.com/Lit-Turtle/myCloset/blob/main/images/hat/GreddyHat.webp?raw=true",
     "https://github.com/Lit-Turtle/myCloset/blob/main/images/hat/GreenYellowBeanie.webp?raw=true",
     "https://github.com/Lit-Turtle/myCloset/blob/main/images/hat/HiGreenHat.webp?raw=true",
     "https://github.com/Lit-Turtle/myCloset/blob/main/images/hat/LocalHat.webp?raw=true",
     "https://github.com/Lit-Turtle/myCloset/blob/main/images/hat/WhiteThrasherBeanie.webp?raw=true",
     "https://github.com/Lit-Turtle/myCloset/blob/main/images/hat/Zippy'sHat.webp?raw=true",
-    "/iamges/hat/Zippy'sHat.webp"
 ];
 //top items
 const tlBtn = document.getElementById("tl-btn");
