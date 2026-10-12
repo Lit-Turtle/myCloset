@@ -241,6 +241,20 @@ saveBtn.addEventListener("click", () => {
 
 //Background Color Picker
 const colorPicker = document.getElementById("bgColor");
+const bgColorBtn = document.getElementById("bg-color-btn");
+
+bgColorBtn.addEventListener("click", function () {
+    if (typeof colorPicker.showPicker === "function") {
+        try {
+            colorPicker.showPicker();
+            return;
+        } catch (error) {
+            // Fall back to click for browsers that expose but cannot use showPicker.
+        }
+    }
+
+    colorPicker.click();
+});
 
 document.addEventListener("click", function (event) {
     if (event.target.closest("button, input, a, select, textarea, .cate-box")) {
@@ -253,3 +267,4 @@ document.addEventListener("click", function (event) {
 colorPicker.addEventListener("input", function () {
     document.body.style.backgroundColor = colorPicker.value;
 });
+
