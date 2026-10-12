@@ -85,7 +85,7 @@ h1 {
 
 #h-img #left-hat,
 #h-img #right-hat {
-    width: clamp(10vh, 7vw, 95px);
+    width: clamp(5vh, 3.5vw, 47.5px);
     height: calc(var(--hat-height) * 0.6);
     box-sizing: border-box;
     object-fit: fill;
