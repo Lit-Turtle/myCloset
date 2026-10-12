@@ -23,36 +23,38 @@ const tImg = document.getElementById("t-img");
 const trBtn = document.getElementById("tr-btn");
 let tPos = 0;
 let tops = [
-    "https://github.com/Lit-Turtle/myCloset/blob/main/images/top/BlackQuarterZip.webp?raw=true"/* Black Quarter Zip*/,
-    "https://github.com/Lit-Turtle/myCloset/blob/main/images/top/BrownCollarandWhiteTee.webp?raw=true"/* Brown collar and white T*/,
-    "https://github.com/Lit-Turtle/myCloset/blob/main/images/top/BrownLongSleeve.webp?raw=true"/* Brown long sleeve*/,
-    "https://github.com/Lit-Turtle/myCloset/blob/main/images/top/EuropeLongSleeveCollar.webp?raw=true"/* Europe Long Sleeve Collar*/,
-    "https://github.com/Lit-Turtle/myCloset/blob/main/images/top/FortunaFishBlackTShirt.webp?raw=true"/* Fortuna Black TShirt */,
-    "https://github.com/Lit-Turtle/myCloset/blob/main/images/top/GreenLongSleeve.webp?raw=true"/* Green Long Sleeve */,
-    "https://github.com/Lit-Turtle/myCloset/blob/main/images/top/GreyKawsLongSleeve.webp"/* Grey Long Sleeve*/,
-    "https://github.com/Lit-Turtle/myCloset/blob/main/images/top/GreyLongSleeve.webp"/* Grey Long Sleeve */,
-    "https://github.com/Lit-Turtle/myCloset/blob/main/images/top/GreyWashedTShirt.webp?raw=true"/* Grey Washed TShirt*/,
-    "https://github.com/Lit-Turtle/myCloset/blob/main/images/top/HumanMadeGreenTShirt.webp?raw=true"/* Human Made Green TShirt*/,
-    "https://github.com/Lit-Turtle/myCloset/blob/main/images/top/LibertyWalkGreenHoodie.webp?raw=true"/* Liberty Walk Green Hoodie */,
-    "https://github.com/Lit-Turtle/myCloset/blob/main/images/top/LightBlueButtonUp.webp"/* Light Blue Button Up */,
-    "https://github.com/Lit-Turtle/myCloset/blob/main/images/top/LiverpoolJersey.webp"/* Liverpool Jersey */,
-    "https://github.com/Lit-Turtle/myCloset/blob/main/images/top/NurburgringBlackTSHirt.webp?raw=true"/* Nurburgring Black TShirt */,
-    "https://github.com/Lit-Turtle/myCloset/blob/main/images/top/OhtaniJapanJersey.webp?raw=true"/* */,
-    "https://github.com/Lit-Turtle/myCloset/blob/main/images/top/OhtaniJapanJersey.webp?raw=true"/* Ohtani Japan Jersey*/,
-    "https://github.com/Lit-Turtle/myCloset/blob/main/images/top/StroudJersey.webp?raw=true"/* Stroud Jersey */,
-    "https://github.com/Lit-Turtle/myCloset/blob/main/images/top/TanWhiteCollarT.webp?raw=true"/* Tan White Collar */,
-    "https://github.com/Lit-Turtle/myCloset/blob/main/images/top/TeddyGreenTShirt.webp?raw=true"/* Teedy Green TShirt */,
-    "https://github.com/Lit-Turtle/myCloset/blob/main/images/top/AsscSeahawksHoodie.webp?raw=true",
-    "https://github.com/Lit-Turtle/myCloset/blob/main/images/top/WCJapanJersey.webp?raw=true",
-    "https://github.com/Lit-Turtle/myCloset/blob/main/images/top/WhiteKnit.webp?raw=true",
-    "https://github.com/Lit-Turtle/myCloset/blob/main/images/top/WhiteLongSleeve.webp?raw=true",
-    "https://github.com/Lit-Turtle/myCloset/blob/main/images/top/WitherspoonJersey.webp?raw=true",
-    "https://github.com/Lit-Turtle/myCloset/blob/main/images/top/JordanUndefeatedHoodie.webp?raw=true",
-    "https://github.com/Lit-Turtle/myCloset/blob/main/images/top/NikeEKJacket.webp?raw=true",
-    "https://github.com/Lit-Turtle/myCloset/blob/main/images/top/NikeGreyPufferJacket.webp?raw=true",
-    "https://github.com/Lit-Turtle/myCloset/blob/main/images/top/PorscheHoodie.webp?raw=true",
-    "https://github.com/Lit-Turtle/myCloset/blob/main/images/top/BlackKnitLongSleeve.webp?raw=true"/*Black knit long sleeve */,
-    "https://github.com/Lit-Turtle/myCloset/blob/main/images/top/BlackCollarTShirt.webp?raw=true", /*Black collar TShirt */
+    "./images/top/BlackQuarterZip.webp",
+    "./images/top/BrownCollarandWhiteTee.webp",
+    "./images/top/BrownLongSleeve.webp",
+    "./images/top/EuropeLongSleeveCollar.webp",
+    "./images/top/FortunaFishBlackTShirt.webp",
+    "./images/top/GreenLongSleeve.webp",
+    "./images/top/GreyKawsLongSleeve.webp",
+    "./images/top/GreyLongSleeve.webp",
+    "./images/top/GreyWashedTShirt.webp",
+    "./images/top/HumanMadeGreenTShirt.webp",
+    "./images/top/LibertyWalkGreenHoodie.webp",
+    "./images/top/LightBlueButtonUp.webp",
+    "./images/top/LiverpoolJersey.webp",
+    "./images/top/NurburgringBlackTSHirt.webp",
+    "./images/top/OhtaniJapanJersey.webp",
+    "./images/top/StroudJersey.webp",
+    "./images/top/TanWhiteCollarT.webp",
+    "./images/top/TeddyGreenTShirt.webp",
+    "./images/top/AsscSeahawksHoodie.webp",
+    "./images/top/WCJapanJersey.webp",
+    "./images/top/WhiteKnit.webp",
+    "./images/top/WhiteLongSleeve.webp",
+    "./images/top/WitherspoonJersey.webp",
+    "./images/top/JordanUndefeatedHoodie.webp",
+    "./images/top/NikeEKJacket.webp",
+    "./images/top/NikeGreyPufferJacket.webp",
+    "./images/top/PorscheHoodie.webp",
+    "./images/top/BlackKnitLongSleeve.webp",
+    "./images/top/BlackCollarTShirt.webp",
+    "./images/top/AsscRiverHoodie.webp",
+
+    // not in the repo yet (still external links)
     "https://image.hm.com/assets/hm/82/70/827052378745fd6c04c1b2fed9580a4b2f303536.jpg?imwidth=1536"/*sunshine tee*/,
     "https://d3nt9em9l1urz8.cloudfront.net/media/catalog/product/cache/3/image/1100x/040ec09b1e35df139433887a97daa66f/b/a/baabldgcrewwht-1.jpg"/*astroboy long-sleeve*/,
     "https://image.uniqlo.com/UQ/ST3/WesternCommon/imagesgoods/445593/item/goods_30_445593_3x4.jpg?width=600"/*tan mickey tee*/,
@@ -75,8 +77,7 @@ let tops = [
     "https://i.ebayimg.com/images/g/N8cAAOSwbDNkTr12/s-l1200.jpg"/*jordan x undefeated black hoodie*/,
     "https://raw.githubusercontent.com/Lit-Turtle/closetimg/main/Free%20Planet%20Shirt.png"/*free planet tee*/,
     "https://raw.githubusercontent.com/Lit-Turtle/closetimg/main/Human%20Made%20Dark%20Blue.png"/*human made dark blue*/,
-    "https://raw.githubusercontent.com/Lit-Turtle/closetimg/main/Never%20Content%20White.png"/*never content white*/,
-    "https://github.com/Lit-Turtle/myCloset/blob/main/images/top/AsscRiverHoodie.webp?raw=true"/*assc river hoodie*/
+    "https://raw.githubusercontent.com/Lit-Turtle/closetimg/main/Never%20Content%20White.png"/*never content white*/
 ];
 //bottom items
 const blBtn = document.getElementById("bl-btn");
@@ -84,13 +85,13 @@ const bImg = document.getElementById("b-img");
 const brBtn = document.getElementById("br-btn");
 let bPos = 0;
 let bottoms = [
-    "https://github.com/Lit-Turtle/myCloset/blob/main/images/bottom/BaggyBlackSweats.webp?raw=true",
-    "https://github.com/Lit-Turtle/myCloset/blob/main/images/bottom/BlackBarrelJeans.webp?raw=true",
-    "https://github.com/Lit-Turtle/myCloset/blob/main/images/bottom/BlackCargoSweats.webp?raw=true",
-    "https://github.com/Lit-Turtle/myCloset/blob/main/images/bottom/BlueJeanShorts.webp?raw=true",
-    "https://github.com/Lit-Turtle/myCloset/blob/main/images/bottom/BrownSweats.webp?raw=true",
-    "https://github.com/Lit-Turtle/myCloset/blob/main/images/bottom/DarkGreyBarrelJeans.webp?raw=true",
-    "https://github.com/Lit-Turtle/myCloset/blob/main/images/bottom/GapBlueJeans.webp?raw=true"
+    "./images/bottom/BaggyBlackSweats.webp",
+    "./images/bottom/BlackBarrelJeans.webp",
+    "./images/bottom/BlackCargoSweats.webp",
+    "./images/bottom/BlueJeanShorts.webp",
+    "./images/bottom/BrownSweats.webp",
+    "./images/bottom/DarkGreyBarrelJeans.webp",
+    "./images/bottom/GapBlueJeans.webp"
 ];
 //shoes items
 const slBtn = document.getElementById("sl-btn");
@@ -98,11 +99,11 @@ const sImg = document.getElementById("s-img");
 const srBtn = document.getElementById("sr-btn");
 let sPos = 0;
 let shoes = [
-    "https://github.com/Lit-Turtle/myCloset/blob/main/images/shoe/AirMax1RedShoe.webp?raw=true",
-    "https://github.com/Lit-Turtle/myCloset/blob/main/images/shoe/BlackJordanShoe.webp?raw=true",
-    "https://github.com/Lit-Turtle/myCloset/blob/main/images/shoe/FoamRnrShoe.webp?raw=true",
-    "https://github.com/Lit-Turtle/myCloset/blob/main/images/shoe/SmileShoe.webp?raw=true",
-    "https://github.com/Lit-Turtle/myCloset/blob/main/images/shoe/WhysoSadShoe.webp?raw=true"
+    "./images/shoe/AirMax1RedShoe.webp",
+    "./images/shoe/BlackJordanShoe.webp",
+    "./images/shoe/FoamRnrShoe.webp",
+    "./images/shoe/SmileShoe.webp",
+    "./images/shoe/WhysoSadShoe.webp"
 ];
 
 const centerH = document.getElementById("center-hat");
