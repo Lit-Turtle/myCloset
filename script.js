@@ -7,6 +7,7 @@ const rightH = document.getElementById("right-hat");
 
 let hPos = 0;
 let hats = [
+    "https://github.com/Lit-Turtle/myCloset/blob/main/images/hat/EmptyHat.webp?raw=true",
     "https://github.com/Lit-Turtle/myCloset/blob/main/images/hat/BillionaireOrangeHat.webp?raw=true",
     "https://github.com/Lit-Turtle/myCloset/blob/main/images/hat/BlackSwissBeanie.webp?raw=true",
     "https://github.com/Lit-Turtle/myCloset/blob/main/images/hat/GreddyHat.webp?raw=true",
