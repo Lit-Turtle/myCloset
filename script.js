@@ -75,10 +75,6 @@ let tops = [
     "https://image.goxip.com/GO0jTItHUZ8BGpsonktgMFS1n48=/fit-in/500x500/filters:format(jpg):quality(80):fill(white)/https:%2F%2Fimages.stockx.com%2Fimages%2FJ-Balvin-Blanco-x-Takashi-Murakami-Large-Flower-Hoodie-Black.jpg"/*murakami black hoodie*/,
     "https://i5.walmartimages.com/asr/7f8c22b2-80d0-427a-a22b-9420012c681d.05d988df28ec19e00b5600f57ef233fb.jpeg"/*jordan breakfast club grey hoodie*/,
     "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/069/756/317/original/917406_01.jpg.jpeg?action=crop&width=1500"/*assc grey hoodie*/,
-    "https://i.ebayimg.com/images/g/N8cAAOSwbDNkTr12/s-l1200.jpg"/*jordan x undefeated black hoodie*/,
-    "https://raw.githubusercontent.com/Lit-Turtle/closetimg/main/Free%20Planet%20Shirt.png"/*free planet tee*/,
-    "https://raw.githubusercontent.com/Lit-Turtle/closetimg/main/Human%20Made%20Dark%20Blue.png"/*human made dark blue*/,
-    "https://raw.githubusercontent.com/Lit-Turtle/closetimg/main/Never%20Content%20White.png"/*never content white*/
 ];
 //bottom items
 const blBtn = document.getElementById("bl-btn");
