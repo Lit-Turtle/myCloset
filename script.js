@@ -16,7 +16,7 @@ let hats = [
     "https://github.com/Lit-Turtle/myCloset/blob/main/images/hat/LocalHat.webp?raw=true",
     "https://github.com/Lit-Turtle/myCloset/blob/main/images/hat/WhiteThrasherBeanie.webp?raw=true",
     "https://github.com/Lit-Turtle/myCloset/blob/main/images/hat/Zippy'sHat.webp?raw=true",
-    ""
+    "/iamges/hat/Zippy'sHat.webp"
 ];
 //top items
 const tlBtn = document.getElementById("tl-btn");
