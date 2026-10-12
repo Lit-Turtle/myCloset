@@ -7,15 +7,15 @@ const rightH = document.getElementById("right-hat");
 
 let hPos = 0;
 let hats = [
-    "https://github.com/Lit-Turtle/myCloset/blob/main/images/hat/EmptyHat.webp?raw=true",
-    "https://github.com/Lit-Turtle/myCloset/blob/main/images/hat/BillionaireOrangeHat.webp?raw=true",
+    "./images/hat/EmptyHat.webp",
+    "./images/hat/BillionaireOrangeHat.webp",
     "./images/hat/BlackSwissBeanie.webp",
-    "https://github.com/Lit-Turtle/myCloset/blob/main/images/hat/GreddyHat.webp?raw=true",
-    "https://github.com/Lit-Turtle/myCloset/blob/main/images/hat/GreenYellowBeanie.webp?raw=true",
-    "https://github.com/Lit-Turtle/myCloset/blob/main/images/hat/HiGreenHat.webp?raw=true",
-    "https://github.com/Lit-Turtle/myCloset/blob/main/images/hat/LocalHat.webp?raw=true",
-    "https://github.com/Lit-Turtle/myCloset/blob/main/images/hat/WhiteThrasherBeanie.webp?raw=true",
-    "https://github.com/Lit-Turtle/myCloset/blob/main/images/hat/Zippy'sHat.webp?raw=true",
+    "./images/hat/GreddyHat.webp",
+    "./images/hat/GreenYellowBeanie.webp",
+    "./images/hat/HiGreenHat.webp",
+    "./images/hat/LocalHat.webp",
+    "./images/hat/WhiteThrasherBeanie.webp",
+    "./images/hat/Zippy'sHat.webp",
 ];
 //top items
 const tlBtn = document.getElementById("tl-btn");
