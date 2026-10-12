@@ -53,6 +53,7 @@ let tops = [
     "./images/top/BlackKnitLongSleeve.webp",
     "./images/top/BlackCollarTShirt.webp",
     "./images/top/AsscRiverHoodie.webp",
+    "./images/top/BenzJersey.webp",
 
     // not in the repo yet (still external links)
     "https://image.hm.com/assets/hm/82/70/827052378745fd6c04c1b2fed9580a4b2f303536.jpg?imwidth=1536"/*sunshine tee*/,
@@ -91,7 +92,9 @@ let bottoms = [
     "./images/bottom/BlueJeanShorts.webp",
     "./images/bottom/BrownSweats.webp",
     "./images/bottom/DarkGreyBarrelJeans.webp",
-    "./images/bottom/GapBlueJeans.webp"
+    "./images/bottom/GapBlueJeans.webp",
+    "./images/bottom/WhiteSweats.webp",
+    "./images/bottom/CreamSweats.webp"
 ];
 //shoes items
 const slBtn = document.getElementById("sl-btn");
