@@ -93,13 +93,13 @@ h1 {
 }
 
 #h-img #left-hat {
-    margin-right: -4.5vw;
+    margin-right: -2vw;
     mask-image: linear-gradient(to right, transparent, black);
     -webkit-mask-image: linear-gradient(to right, transparent, black);
 }
 
 #h-img #right-hat {
-    margin-left: -4.5vw;
+    margin-left: -2vw;
     mask-image: linear-gradient(to left, transparent, black);
     -webkit-mask-image: linear-gradient(to left, transparent, black);
 }
@@ -151,7 +151,7 @@ h1 {
 #t-img #left-top,
 #b-img #left-bottom,
 #s-img #left-shoe {
-    margin-right: -4.5vw;
+    margin-right: -2vw;
     mask-image: linear-gradient(to right, transparent, black);
     -webkit-mask-image: linear-gradient(to right, transparent, black);
 }
@@ -159,7 +159,7 @@ h1 {
 #t-img #right-top,
 #b-img #right-bottom,
 #s-img #right-shoe {
-    margin-left: -4.5vw;
+    margin-left: -2vw;
     mask-image: linear-gradient(to left, transparent, black);
     -webkit-mask-image: linear-gradient(to left, transparent, black);
 }
